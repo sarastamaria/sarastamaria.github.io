@@ -1,0 +1,158 @@
+body {background-color: white;
+		font-family: : arial;}
+
+
+html{scroll-behavior: smooth;}
+
+
+ 
+
+  header{position: sticky;
+  		top: 0;
+  		background-color: white;
+  		height: 18vh;
+  		z-index: 1000;}
+
+
+   ul li a{transition-property: font-size,color; 
+   			transition-duration: .5s,.5s;}		
+
+  ul li a:hover{
+		
+		font-size: 115%;
+		
+		color: grey;}
+
+ 
+ .navegador .navbar-toggler-icon {background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+								}
+
+.navbar-light .navbar-toggler {border: none;
+}
+
+
+
+.logo{background-position: center;
+	background-size: cover;
+	transition-property:opacity;
+	transition-duration: 1s;}
+
+.logo:hover{opacity:0.7;}
+
+.cabeza1{background-color: white;}
+
+
+.cabeza{background-color: white;
+		/*height: 79vh;*/
+		width: 60%; }
+
+.cabeza img {background-size: cover;
+			background-attachment: fixed;
+			width:  100%;
+			background-position: center;
+			animation-name: cabeza;
+			animation-duration: 1.5s;
+			animation-iteration-count: 1;
+			animation-fill-mode: forwards; 
+			animation-timing-function: ease-out;
+
+
+			}
+
+
+.texto {width: 50%;
+		}
+
+.info {background-color: lightgrey;}
+
+.tim {width: 100%;
+	background-size: cover;
+	}
+
+.icono{width: 25px;height: 25px;}
+
+.cajas {background-color: white;
+		text-align: center;
+		margin-bottom: 2%;}
+
+.cajas img {background-size: cover;
+			background-position: center;
+			width: 80%;}
+
+.caja{margin-top: 5%;}
+
+.titulos {background-color: white;
+			height: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: bold;
+		}
+
+
+.vermas {
+		color: black;
+		width: 80px;
+		border-style: solid;
+		border-color: black;
+		border-width: thin;	
+
+		}
+
+.pie{}
+
+
+/*contacto*/
+
+.frase{width: 80%;
+		font-size: medium;}
+
+
+
+/*animaciones*/
+
+@keyframes cabeza {
+	0% {transform: translate(0,700px);}
+	100%{transform: translate(0,0);}
+}
+
+
+@keyframes cabeza2 {
+	0% {transform: translate(0,900px);}
+	100%{transform: translate(0,0);}
+}
+
+
+
+/*xlg*/
+@media (min-width: 1200px) {.cabeza{height: 79vh;}}
+
+
+/*lg*/
+@media (min-width: 992px) and (max-width: 1199.98px) {.cabeza{height: 79vh; width: 70%;}}
+
+@media (max-width: 991.98px) {#navbarNav{background-color: white;}
+
+
+@media (max-width: 575.98px) {.cajas img{width: 60%;}}
+
+/*md*/
+
+@media (min-width: 768px) and (max width: 991.98px){.cabeza {height: 60vh;}}
+
+@media (max-width: 768px) {.info{font-size: small;margin-top: 0;}
+							.cabeza1{animation-name: cabeza2;
+									animation-duration: 1s;
+									animation-timing-function: ease-out;
+									animation-fill-mode: forwards;
+									animation-iteration-count: 1;}}
+
+ 
+
+
+
+
+
+
+
+

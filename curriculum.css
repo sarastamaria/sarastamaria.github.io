@@ -1,0 +1,263 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	font-family: verdana;
+}
+
+
+#contenedor {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+	}
+
+
+
+#principal{
+	width: 30%;
+	padding: 2%;
+	background-color: gray;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	height: 100vh;
+	animation-name: animacion;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+	position: sticky;
+	top: 0
+	}
+
+
+@keyframes animacion{
+	0% {transform: translateY(-700px);}
+	100% {transform: translateY(0);}
+}
+
+
+#foto{ width: 80%;
+	border-radius: 50%;
+	}
+
+#foto img {width: 100%;border-radius: 50%;}
+
+
+#menu{
+	box-sizing: border-box;
+	padding:1.5%;
+	width: 100%;
+}
+
+ul{
+	display: flex;padding-left: 0;
+	flex-flow: row wrap;justify-content: center;
+}
+
+
+li{
+	list-style: none;
+	width: 45%;
+	background-color: rgb(211,211,211);
+	text-align: center; margin-top: 4%;padding: 3%;
+	border-style: solid;
+	border-color: white;
+	transition-property: background-color, color,font-size;
+	transition-duration: 1s,1s,2s;
+	transition-delay: .3s,.3s,.2s;
+	}
+
+a{
+	text-decoration: none;
+	color: black;
+	padding: 1%;
+	transition-property: color,font-size;
+	transition-duration: 1s,1.5s;
+	transition-delay: .3s,.1s;
+	}
+
+
+
+
+
+li:hover{transition-property: background-color;
+	background-color: grey;
+	}
+
+
+a:hover{transition-property: color,font-size;
+		color: white;
+		font-size: 110%;}
+
+
+
+#informacion{width: 67%;
+			padding: 1.5%;
+			box-sizing: border-box;
+			background-color: white;
+			animation-name: animacion2;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease-in-out;
+			animation-iteration-count: 1;
+}
+
+
+@keyframes animacion2{
+	0% {transform: translateY(700px);}
+	100% {transform: translateY(0);}
+}
+
+#datos {
+		background-color: rgb(211,211,211);
+		padding: 4%;
+		transition-property: background-color;
+		transition-duration: 2s;
+		transition-delay: .2s;
+		
+		}
+
+
+#educacion {background-color: rgb(211,211,211);
+			padding: 4%;
+			margin-top: 2.5%;
+			transition-property: background-color;
+			transition-duration: 2s;
+			transition-delay: .2s;
+			}
+
+
+#premios {
+			background-color: rgb(211,211,211);
+			padding: 4%;
+			margin-top: 2.5%;
+			transition-property: background-color;
+			transition-duration: 2s;
+			transition-delay: .2s;
+			}
+
+
+
+
+#peliculas {background-color: rgb(211,211,211);
+			padding: 4%;
+			margin-top: 2.5%;
+			transition-property: background-color;
+			transition-duration: 2s;
+			transition-delay: .2s;
+			}
+
+
+#libros{background-color: rgb(211,211,211);
+		padding: 4%;
+		margin-top: 2.5%;
+		transition-property: background-color;
+		transition-duration: 2s;
+		transition-delay: .2s;
+		}
+
+
+#personajes {background-color: rgb(211,211,211);
+			padding: 4%;
+			margin-top: 2.5%;
+			transition-property: background-color;
+			transition-duration: 2s;
+			transition-delay: .2s;}
+
+
+#datos:hover{
+	transition-property: background-color;
+	background-color: rgb(220,220,220);
+}
+
+#educacion:hover{
+	transition-property: background-color;
+	background-color: rgb(220,220,220);
+}
+
+#premios:hover{
+	transition-property: background-color;
+	background-color: rgb(220,220,220);
+}
+
+#peliculas:hover{
+	transition-property: background-color;
+	background-color: rgb(220,220,220);
+}
+
+#personajes:hover{
+	transition-property: background-color;
+	background-color: rgb(220,220,220);
+}
+
+#libros:hover{
+	transition-property: background-color;
+	background-color: rgb(220,220,220);
+}
+
+h2{color: grey;}
+
+
+
+
+
+
+@media screen and (min-width: 960px) and (max-width: 1200px){
+	#contenedor{flex-wrap: wrap;}
+	#principal{height:100vh;}
+	#informacion{}
+	body {font-size: 90%;}
+}
+
+/*md*/
+
+@media screen and (min-width: 600px) and (max-width: 959px)
+	{
+	#contenedor{flex-flow: column wrap;}
+
+	#foto{width: 25%;}
+
+	#informacion{width: 100%;}
+
+	#principal{width: 100%; height:30%;flex-flow: row wrap;
+				justify-content: space-around;align-items: center;}
+	
+	#menu{width: 68%;}
+
+	ul{justify-content: space-between;}
+
+	li{width: 25%;
+		margin: 3%;padding: 2%;
+		box-sizing: border-box;}
+
+	a{}
+
+
+
+	body{font-size: 80%;}
+
+	}
+
+
+/*sm*/
+
+@media screen and (min-width: 0px) and (max-width: 599px)
+	{
+	#contenedor{flex-flow: column wrap;}
+
+	#principal{width: 100%;height: 100%;}
+
+	li {margin: 1%;
+		width: 100%;}
+
+	#informacion{width: 100%;}
+	#foto{width: 35%;}
+	body{font-size: 80%;}
+}
